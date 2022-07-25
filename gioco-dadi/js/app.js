@@ -13,18 +13,19 @@ console.log('JS ok');
             // console.log(bot);
             let user = 1+Math.floor(6*Math.random()); 
             // console.log(bot);
+            let message = 0;
             document.getElementById("bot").innerHTML = bot;
                 document.getElementById("user").innerHTML = user;
                 document.getElementById("message").innerHTML = message;
                 
                 if(user == bot){
-                message = "pareggio";
+                let message = "pareggio";
                 }
                 else if(bot < user){
-                   message ="hai vinto";
+                  let message ="hai vinto";
                 }
                 else{
-                   message ="hai perso";
+                  let message ="hai perso";
                 }
                 	 
     })
