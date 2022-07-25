@@ -6,10 +6,25 @@ console.log('JS ok');
 // se il valore casuale del bot è <= del valore
 // stampa hai perso
 // altrimenti stampa congratulazioni hai vinto
-let bot = 1+Math.floor(6*Math.random());
-console.log(bot);
-let user = 1+Math.floor(6*Math.random()); 
-console.log(bot);
-document.getElementById("bot").innerHTML ="bot ";
-	document.getElementById("user").innerHTML ="user";
-    // document.addEventListener("click");
+
+
+    document.getElementById('start').addEventListener('click',function(){
+        let bot = 1+Math.floor(6*Math.random());
+            // console.log(bot);
+            let user = 1+Math.floor(6*Math.random()); 
+            // console.log(bot);
+            document.getElementById("bot").innerHTML = bot;
+                document.getElementById("user").innerHTML = user;
+                document.getElementById("message").innerHTML = message;
+                
+                if(user == bot){
+                message = "pareggio";
+                }
+                else if(bot < user){
+                   message ="hai vinto";
+                }
+                else{
+                   message ="hai perso";
+                }
+                	 
+    })
